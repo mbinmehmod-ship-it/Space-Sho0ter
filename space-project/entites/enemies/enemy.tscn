@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bsusix21cmvcj"]
+
+[ext_resource type="Texture2D" uid="uid://bggt6y4dt3f4r" path="res://new folder/assets/spacepixels_ships_stroked/space_pixels_ships_stroked/ship_yellow_stroked.png" id="1_7k104"]
+
+[node name="Node2D" type="Node2D" unique_id=924958958]
+
+[node name="ShipYellowStroked" type="Sprite2D" parent="." unique_id=1553661286]
+rotation = -3.1415927
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_7k104")

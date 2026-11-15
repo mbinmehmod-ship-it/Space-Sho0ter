@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cnxwn5sy8o3jp"]
+
+[ext_resource type="Texture2D" uid="uid://cvkc3cqhgkp0l" path="res://new folder/assets/spacepixels-0.1.0/spacepixels-0.1.0/pixel_laser_blue.png" id="1_8agey"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u52i1"]
+size = Vector2(10.000001, 33.882355)
+
+[node name="bullet" type="Node2D" unique_id=779445453]
+
+[node name="bullets" type="Sprite2D" parent="." unique_id=1036206317]
+position = Vector2(2.842171e-14, 0)
+scale = Vector2(0.54499996, 0.4722222)
+texture = ExtResource("1_8agey")
+
+[node name="buttetarea" type="Area2D" parent="bullets" unique_id=1836506375]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bullets/buttetarea" unique_id=1035281018]
+scale = Vector2(0.9999999, 1)
+shape = SubResource("RectangleShape2D_u52i1")

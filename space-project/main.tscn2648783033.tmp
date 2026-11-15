@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dyuo7hk1ivdcw"]
+
+[ext_resource type="Texture2D" uid="uid://cw8gtanfhgtwh" path="res://new folder/assets/background-blue.png" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://b4vyc24wtjqkv" path="res://main.gd" id="1_lquwl"]
+[ext_resource type="PackedScene" uid="uid://caa4wrmewc5hy" path="res://entites/player/player.tscn" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://6a3scbs0fec7" path="res://new folder/assets/spacepixels-0.2.0/spacepixels-0.2.0/horizontal_bar_green.png" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://dr3eda7ls7ug4" path="res://enemy_spawner.gd" id="5_lquwl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u52i1"]
+size = Vector2(568, 15)
+
+[node name="MAIN" type="Node2D" unique_id=302043755]
+script = ExtResource("1_lquwl")
+
+[node name="BackgroundBlue" type="Sprite2D" parent="." unique_id=1310942315]
+position = Vector2(280, 408)
+scale = Vector2(1.4112499, 2.04125)
+texture = ExtResource("1_ig7tw")
+
+[node name="player" parent="." unique_id=2079695245 instance=ExtResource("2_0xm2m")]
+position = Vector2(256, 720)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2089882014]
+position = Vector2(216, 416)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2037877620]
+position = Vector2(62, 232.5)
+shape = SubResource("RectangleShape2D_u52i1")
+
+[node name="HorizontalBarGreen" type="Sprite2D" parent="." unique_id=1684399142]
+position = Vector2(272, 646.125)
+scale = Vector2(4.338462, 0.37500003)
+texture = ExtResource("3_h2yge")
+
+[node name="Bullets" type="Node" parent="." unique_id=2066143918]
+
+[node name="enemy spawner" type="Node2D" parent="." unique_id=1725979978]
+script = ExtResource("5_lquwl")

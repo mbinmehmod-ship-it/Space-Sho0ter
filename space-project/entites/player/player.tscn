@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://caa4wrmewc5hy"]
+
+[ext_resource type="Texture2D" uid="uid://c7yl8fv6ljmht" path="res://new folder/assets/spacepixels_ships_stroked/space_pixels_ships_stroked/player_heavy_gold.png" id="1_gxcxq"]
+[ext_resource type="Script" uid="uid://cqv4svcn4womi" path="res://entites/player/player.gd" id="4_y1j2n"]
+
+[node name="player" type="Node2D" unique_id=2079695245]
+
+[node name="PlayerHeavyGold" type="Sprite2D" parent="." unique_id=1557602786]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_gxcxq")
+script = ExtResource("4_y1j2n")
